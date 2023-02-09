@@ -4,15 +4,23 @@
 
 - [Browsing](#browsing)
 - [Select](#select)
-- [Select-join](#select-join)
+- [Select-Join](#select-join)
 - [Conditions](#conditions)
 - [Create / Open / Delete Database](#create--open--delete-database)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
+- [Backup Database To SQL File](#backup-database-to-sql-file)
+- [Restore from Backup SQL File](#restore-from-backup-sql-file)
+- [Repair Tables After Unclean Shutdown](#repair-tables-after-unclean-shutdown)
+- [Insert](#insert)
+- [Delete](#delete)
+- [Update](#update)
+- [Create / Delete / Modify Table](#create--delete--modify-table)
+  - [Create](#create)
+  - [Drop](#drop)
+  - [Alter](#alter)
+  - [Change Field Order](#change-field-order)
+- [Keys](#keys)
+- [Users And Privileges](#users-and-privileges)
+- [Main Data Types](#main-data-types)
 
 ## BROWSING
 
@@ -113,7 +121,7 @@ condition1 AND condition2
 condition1 OR condition2
 ```
 
-## CREATE / OPEN / DELETE DETABASE
+## CREATE / OPEN / DELETE DaTABASE
 
 ```sql
 CREATE DATABASE DatabaseName;
@@ -143,7 +151,7 @@ mysqldump -u Username -p dbNameYouWant > databasename_backup.sql
 mysql -u Username -p dbNameYouWant < databasename_backup.sql;
 ```
 
-## RAPAIR TABLES AFTER UNCLEAN SHOUTDOWN
+## REPAIR TABLES AFTER UNCLEAN SHUTDOWN
 
 ```sql
 mysqlcheck --all-databases;

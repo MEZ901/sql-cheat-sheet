@@ -6,7 +6,7 @@
 - [Select](#select)
 - [Select-join](#select-join)
 - [Conditions](#conditions)
-- [Create / Open / Delete Database](#create-open-delete-database)
+- [Create / Open / Delete Database](#create--open--delete-database)
 - [](#)
 - [](#)
 - [](#)
